@@ -197,6 +197,20 @@
     },
     {
       "product_id": 15,
+      "product_title": "Apple Watch Series 8",
+      "product_image": "https://i.ibb.co.com/HCC7d5C/Apple-Watch-S8-2up-hero-220907-Full-Bleed-Image-jpg-large.jpg",
+      "category": "Smart Watches",
+      "price": 379.99,
+      "description": "Apple Watch SE with essential health tracking features and large display.",
+      "specification": ["GPS", "40mm display", "Water-resistant"],
+      "availability": true,
+      "rating": 4.5,
+      "brand": "Apple",
+      "color": "Gold",
+      "warranty": "1 year"
+    },
+    {
+      "product_id": 16,
       "product_title": "Sony Xperia 1 III",
       "product_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdIyWRa8uu-sq1MESP60YqV-hMyxMj-2vCZQ&s",
       "category": "Phone",
@@ -207,6 +221,34 @@
       "rating": 4.5,
       "brand": "Sony",
       "color": "Purple",
+      "warranty": "1 year"
+    },
+    {
+      "product_id": 17,
+      "product_title": "iPhone 14 Pro",
+      "product_image": "https://i.ibb.co.com/XVW6WTH/Apple-i-Phone-14-Pro-FINAL-Yoast-image-packshot-review-1.jpg",
+      "category": "Phone",
+      "price": 1299.99,
+      "description": "Apple iPhone 14 Pro with A14 Bionic chip and 5G connectivity.",
+      "specification": ["128GB storage", "6.5-inch display", "Triple 12MP camera"],
+      "availability": true,
+      "rating": 4.8,
+      "brand": "Apple",
+      "color": "Graphite",
+      "warranty": "1 year"
+    },
+    {
+      "product_id": 18,
+      "product_title": "AirPods 2 Pro",
+      "product_image": "https://i.ibb.co.com/yyCYNLd/aniket-narula-b-ZK1mrpj-Gnw-unsplash.jpg",
+      "category": "Accessories",
+      "price": 349.99,
+      "description": "Apple AirPods 2 Pro with active noise cancellation and transparency mode.",
+      "specification": ["Noise canceling", "Wireless charging", "5.5 hours playtime"],
+      "availability": true,
+      "rating": 4.8,
+      "brand": "Apple",
+      "color": "White",
       "warranty": "1 year"
     }
   

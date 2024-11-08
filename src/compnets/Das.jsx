@@ -7,6 +7,12 @@ import { useNavigate } from 'react-router-dom'
 export default function Das() {
   const {storData,setStorData,priceShort} = useContext(DataContext)
 
+  let [swich,setSwich] = useState(true)
+
+  function swichBtn(){
+    setSwich(!swich)
+  }
+
   let navigate = useNavigate()
   
   
@@ -31,8 +37,13 @@ return (
     <div className='w-11/12 h-[300px] mx-auto text-center bg-[#9538E2]'>
       <h1 className='text-3xl text-white font-bold mt-3 mb-3'>{title}</h1>
       <p className='text-white w-3/4 mx-auto '>{para}</p>
-      <button className='bg-white rounded-full p-3 text-[#9538E2] px-3'>Cart</button>
-      <button className='bg-[#9538E2] rounded-full p-3 text-white'>Wishlist</button>
+
+
+      <button onClick={swichBtn} className={`bg-white rounded-full p-3 ml-3 ${swich ? 'text-[#9538E2] px-3' : ''}`}>Cart</button>
+      <button onClick={swichBtn} className={`bg-white rounded-full p-3 ml-3 ${swich ? 'bg-[#9538E2]' : 'bg-[#9538E2] text-[#9538E2]'}`}>Wishlist</button>
+
+     
+      
 
       </div>
 
@@ -48,13 +59,15 @@ return (
         </div>
         </div>
 
+
+
         {
           storData.map(x => <DasChild x={x}></DasChild>)
         }
         
 
       </div>
-{/*  */}
+
 <dialog id="my_modal_5" className="modal modal-bottom sm:modal-middle">
   <div className="modal-box">
     <div><img className='w-14 mx-auto' src="https://i.ibb.co.com/w69Pyy3/success.png" alt="" /></div>
@@ -69,7 +82,7 @@ return (
     </div>
   </div>
 </dialog>
-      {/*  */}
+      
   </div>
 )
 }
