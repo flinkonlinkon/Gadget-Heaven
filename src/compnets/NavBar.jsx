@@ -1,12 +1,19 @@
 import React, { useContext } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import { DataContext } from '../Datatransfer'
 
 export default function NavBar() {
   let {storData,setStorData,remove,priceShort} = useContext(DataContext)
+
+  const location = useLocation()
+  console.log(location.pathname);
+ 
+  
   return (
-    <div>
-      <div className="navbar bg-base-100">
+    <div className='w-11/12 mx-auto rounded-lg'>
+
+      
+      <div className={`rounded-lg navbar ${location.pathname === '/' ? 'bg-[#9538E2]' : 'bg-base-200'} `}>
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
