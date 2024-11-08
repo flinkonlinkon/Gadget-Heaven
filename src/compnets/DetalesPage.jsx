@@ -107,7 +107,7 @@ export default function DetalesPage() {
 
 
         <button onClick={()=>btnData(fnd)} className='btn rounded-full bg-[#9538E2] text-white p-3 mt-5 flex gap-2'>Add To Card <img className='w-5 h-5' src="https://i.ibb.co.com/1fgxktw/shopping-cart.png" alt="" /></button>
-        <button onClick={()=>btnData2(fnd)} className='btn rounded-full bg-white relative top-2'><img className='w-7 h-7' src="https://i.ibb.co.com/pzW8RpX/heart.png" alt="" /></button>
+        <button  className='btn rounded-full bg-white relative top-2'><img className='w-7 h-7' src="https://i.ibb.co.com/pzW8RpX/heart.png" alt="" /></button>
         </div>
       </div>
       </div>
