@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
+import { DataContext } from '../Datatransfer'
 
 export default function NavBar() {
+  let {storData,setStorData,remove,priceShort} = useContext(DataContext)
   return (
     <div>
       <div className="navbar bg-base-100">
@@ -31,7 +33,7 @@ export default function NavBar() {
             
          
         </li>
-        <li><Link to='/my'>My</Link></li>
+        <li><Link to='/my'>Contact Us</Link></li>
         <li><Link to='/dashboard'>Dashboard</Link></li>
       </ul>
     </div>
@@ -46,12 +48,13 @@ export default function NavBar() {
             
          
         </li>
-        <li><Link to='/my'>My</Link></li>
+        <li><Link to='/my'>Contact Us</Link></li>
         <li><Link to='/dashboard'>Dashboard</Link></li>
     </ul>
   </div>
-  <div className="navbar-end">
-    <a className="btn">Button</a>
+  <div className="navbar-end gap-3">
+    <a className="btn rounded-full bg-white"><img className='w-7' src="https://i.ibb.co.com/1fgxktw/shopping-cart.png" alt="" />{storData.length}</a>
+    <a className="btn rounded-full bg-white"><img className='w-7' src="https://i.ibb.co.com/pzW8RpX/heart.png" alt="" /></a>
   </div>
 </div>
     </div>

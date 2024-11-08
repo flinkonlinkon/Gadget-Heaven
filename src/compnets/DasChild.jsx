@@ -1,6 +1,8 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
+import { DataContext } from '../Datatransfer';
 
 export default function DasChild({x}) {
+  let {storData,setStorData,remove} = useContext(DataContext)
   let {product_id,product_title,product_image,category,price,description,specification,availability,rating,brand,color,warranty} = x
     console.log(typeof price);
     let [fprice,setFprice] = useState(0)
@@ -27,6 +29,10 @@ export default function DasChild({x}) {
   <p className='text-gray-300'>{description}</p>
   <p className='font-bold'>price:${price}</p>
 </div>
+
+<button onClick={()=> remove(product_title)} className='btn rounded-full relative left-72'>
+<img className='w-7 h-7' src="https://i.ibb.co.com/xhcSTDZ/delete-1.png" alt="" />
+</button>
 
 
 </div>

@@ -20,6 +20,9 @@ import Laptop from './compnets/Laptop.jsx'
 import Watch from './compnets/Watch.jsx'
 import Iphone from './compnets/Iphone.jsx'
 import Datatransfer from './Datatransfer.jsx'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import WishList from './compnets/WishList.jsx'
 
 const router = createBrowserRouter([
   {
@@ -76,6 +79,10 @@ const router = createBrowserRouter([
         path:'/details/:id',
         element:<DetalesPage></DetalesPage>,
         loader: ()=> fetch('../gadgetdata.json')
+      },
+      {
+        path:'/wishlist',
+        element:<WishList></WishList>
       }
     ],
     },
@@ -84,6 +91,19 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
+    <ToastContainer
+    position="top-center"
+    autoClose={3000}
+    hideProgressBar={false}
+    newestOnTop={false}
+    closeOnClick
+    rtl={false}
+    pauseOnFocusLoss
+    draggable
+    pauseOnHover
+    theme="light"
+    
+    />
     <Datatransfer><RouterProvider router={router}></RouterProvider></Datatransfer>
  
   </StrictMode>,
