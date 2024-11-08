@@ -1,8 +1,12 @@
-# React + Vite
+# Gadget Heaven
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+TLive Website Link : https://zesty-jelly-6c0810.netlify.app/
+List of React Fundamental concepts used in the project:1.PROPS
+2.contextAPI 3.router 4.useState 5.loader
+Managing data with contextAPI
+5 features of this website:1.you can buy phone
+2.you can buy laptop or pc
+3.you can add you your product on cart
+4.you can email us
+5.easy to access your product
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
